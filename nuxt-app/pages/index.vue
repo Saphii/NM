@@ -1,7 +1,7 @@
 <template>
     <div class="absolute w-full h-full">
       <video autoplay loop muted class="object-cover w-full h-full">
-        <source src="../static/video/travaux.mp4" type="video/webm" />
+        <source src="../static/video/travaux_w0iEUQ3Z_AdobeExpress.mp4" type="video/webm" />
       </video>
   
       <div class="absolute text-center inset-0 flex flex-col items-center justify-center opacity-75">
