@@ -53,13 +53,14 @@ export default {
     return {
       items: [
         {
-          src: "../static/images/logo.png"
+          src: 'nuxt-app\static\images\im1.png'
         },
         {
-          src: "../static/images/im2.png"
+          src: 'nuxt-app\static\images\im2.png'
         },
     
       ]
+
     }
   }
 }
