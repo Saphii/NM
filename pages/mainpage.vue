@@ -75,17 +75,8 @@
 
     </div>
   </v-container>
-  <div style="text-align: center;">
-    <v-btn class="text-center bg-orange" @click="showModal = true">Description</v-btn>
-  <v-dialog v-model="showModal" class="text-center" :max-width="700" :max-height="700"  center>
-    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
-      <img class="img-responsive" src="../static/images/infoHomeKeeper.png" alt="" style="width: 900px; height: 900px;">
-      
-    </div>
-  </v-dialog>
-</div>
 
-       
+      
        <div class="flex flex-wrap align-center justify-center  ">
         <div><img src="../static/images/image1.png" class="mx-auto" alt=""></div>
         <div><img src="../static/images/image2.png" class="mt-4" alt=""></div>
