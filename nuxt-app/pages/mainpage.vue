@@ -4,18 +4,22 @@
         <v-toolbar-title class="ml-5 mr-4">Nicolas MEYER</v-toolbar-title>
   
         <v-spacer></v-spacer>
-  
-        <v-btn text>Accueil</v-btn>
-        <v-btn text>À propos</v-btn>
-        <v-btn text>Contact</v-btn>
-      </v-toolbar>
+        <a href="#form">
+          <v-btn class="bg-orange mr-5" text>Contact</v-btn>
+        </a>
+        </v-toolbar>
+        
       <div class="d-flex flex-column align-center justify-center">
       <img src="../static/images/logo-removebg-preview.png" alt="">
 
-      <h1 class="text-center text-3xl mb-2 mt-5 text-blue
+      <div class="profil">
+      <img src="../static/images/nico.jpg" class="float-left	 w-40 border 2 rounded-lg" alt="">
+      <h1 class="text-center text-3xl mb-2 mt-15 text-blue
       ">Installateur d'alarme<span class="text-orange"> Somfy  </span>et vidéosurveillance</h1>
     </div>
-      <v-content>
+
+    </div>
+      <v-content class="bg-white">
         <v-container class="d-flex align-center justify-center">
       
 
@@ -29,7 +33,6 @@
                 
                 N'hésitez pas à me contacter via le formulaire en ligne pour tout renseignement ou demande de devis !
             </p>
-            <img src="../static/images/nico.jpg" class=" w-40 border 2 rounded-lg" alt="">
 
           </v-card-text>
 
@@ -72,18 +75,28 @@
 
     </div>
   </v-container>
+  <div style="text-align: center;">
+    <v-btn class="text-center bg-orange" @click="showModal = true">Description</v-btn>
+  <v-dialog v-model="showModal" class="text-center" :max-width="700" :max-height="700"  center>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+      <img class="img-responsive" src="../static/images/infoHomeKeeper.png" alt="" style="width: 900px; height: 900px;">
+      
+    </div>
+  </v-dialog>
+</div>
+
        
        <div class="flex flex-wrap align-center justify-center  ">
         <div><img src="../static/images/image1.png" class="mx-auto" alt=""></div>
         <div><img src="../static/images/image2.png" class="mt-4" alt=""></div>
 
        </div>
-       <v-card-title class="headline text-center bold mt-5 text-orange">ME CONTACTER</v-card-title>
 
+       <v-card-title   class="headline text-center bold mt-5 text-orange">ME CONTACTER</v-card-title>
 
        <div class="d-flex justify-center align-center  m-5 bg-indigo" style="">
 
-        <v-form v-model="valid" ref="form" class="px-5 py-3 mx-auto" style="bg-gradient-to-r from-cyan-500 to-blue-500; border-radius: 10px; width: 500px;">
+        <v-form v-model="valid" ref="form" class="px-5 py-3 mx-auto" style="bg-gradient-to-r from-cyan-500 to-blue-500; border-radius: 10px; width: 500px;" id="form">
           <v-text-field
             label="Nom"
             v-model="formData.name"
@@ -121,9 +134,9 @@
       <v-footer class="absolute " color="indigo" dark>
         <v-spacer></v-spacer>
   
-        <p class="text-white">Tous droits réservés - © 2023 Copyright:</p>
+        <p id="réseaux" class="text-white">Tous droits réservés - © 2023 Copyright:</p>
   
-        <v-spacer></v-spacer>
+        <v-spacer ></v-spacer>
       </v-footer>
     </v-app>
 
@@ -134,6 +147,7 @@
 export default {
   data () {
     return {
+      showModal: false,
       valid: false,
       formData: {
         name: '',
@@ -175,6 +189,13 @@ export default {
 
 
 <style>
+
+@media screen and (max-width: 267px) {
+  .v-dialog .img-responsive {
+   display: flex;
+flex-direction: column;  }
+}
+
 @media (max-width: 600px) {
   .flex-row {
     flex-direction: column;
@@ -185,7 +206,8 @@ export default {
   border-radius: 10px;
   width: 100%;
   height: 400px;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .bg-gradient-blue {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
@@ -199,6 +221,13 @@ export default {
   margin-bottom: 7%;
   margin-top: 7%;
 
+}
+
+.profil {
+  flex-wrap: wrap;
+  margin-bottom: 4%;
+  margin-top: 4%;
+  justify-content: center;
 }
 
 .img:hover{
@@ -249,6 +278,7 @@ h4 {
 @media screen and (max-width: 640px) {
   nav .onglets .link, nav h1 img .logo {
       display: none;
+    
   }
 
   .homeKeeper{
@@ -257,6 +287,8 @@ h4 {
       height: 70%;
       width: 70%;
   }
+
+  .
 
   .logo{
       height: 70%;
