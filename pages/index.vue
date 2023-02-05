@@ -2,7 +2,7 @@
     <div class="absolute w-full h-full">
       
       <video autoplay loop muted class="object-cover w-full h-full">
-        <source src="../static/video/Sans titre.mp4" type="video/webm" />
+        <source src="../static/video/Sanstitre.mp4" type="video/webm" />
       </video>
       
       <div class="  rounded absolute text-center inset-0 flex flex-col items-center justify-center opacity-75">
