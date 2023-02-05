@@ -13,9 +13,9 @@
       <img src="../static/images/logo-removebg-preview.png" alt="">
 
       <div class="profil">
-      <img src="../static/images/nico.jpg" class="float-left	 w-40 border 2 rounded-lg" alt="">
-      <h1 class="text-center text-3xl mb-2 mt-15 text-blue
-      ">Installateur d'alarme<span class="text-orange"> Somfy  </span>et vidéosurveillance</h1>
+      <img src="../static/images/nico.jpg" class="float-left w-40 border 2 rounded-lg" alt="">
+      <h1 class="text-center text-2xl mb-2 mt-15 text-blue
+      ">Installateur d'alarme<span class="text-orange"> Somfy </span> et vidéosurveillance</h1>
     </div>
 
     </div>
