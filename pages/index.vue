@@ -1,8 +1,8 @@
 <template>
     <div class="absolute w-full h-full">
       
-      <video autoplay loop muted class="object-cover w-full h-full">
-        <source src="../static/video/Sanstitre.mp4" type="video/webm" />
+      <video autoplay loop muted class="object-cover w-100 h-100">
+        <source src="../static/video/Sanstitre.mp4" />
       </video>
       
       <div class="  rounded absolute text-center inset-0 flex flex-col items-center justify-center opacity-75">
